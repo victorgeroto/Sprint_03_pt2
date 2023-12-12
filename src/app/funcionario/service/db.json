@@ -1,0 +1,20 @@
+{
+  "funcionarios": [
+    {
+      "id": 1,
+      "nome": "string",
+      "cargo": "string",
+      "salario": 3330,
+      "area_atuacao": "string",
+      "local_trabalho": "string"
+    },
+    {
+      "id": 2,
+      "nome": "zdgvvsrg",
+      "cargo": "rbrrr",
+      "salario": "5555",
+      "area_atuacao": "vrv",
+      "local_trabalho": ""
+    }
+  ]
+}

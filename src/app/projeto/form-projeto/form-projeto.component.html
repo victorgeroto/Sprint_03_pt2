@@ -1,0 +1,48 @@
+<div class="card p-3 ">
+    <form class="row g-3 needs-validation" novalidate [formGroup]="form">
+        <div class="col-sm-12">
+            <label for="nome" class="form-label">Nome do projeto</label>
+            <input type="text" class="form-control card" id="nome" placeholder="Nome do cursos" formControlName="nome">
+            <div class="invalid-feedback">
+                Informe o nome do projeto!!!
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <label for="descricao" class="form-label">Descrição do projeto</label>
+            <input type="text" class="form-control card" id="descricao" placeholder="descricao" formControlName="descricao">
+            <div class="invalid-feedback">
+                Informe o descrição da projeto!!!
+            </div>
+            <div class="col-sm-6">
+                <label for="quantidade" class="form-label">Quantidade de participantes</label>
+                <input type="text" class="form-control card" id="quantidade" placeholder="Quantidade de participantes" formControlName="qtdeparticipantes">
+                <div class="invalid-feedback">
+                    Informe a quantidade de participantes!!!
+                </div>
+                <div class="col-sm-12">
+                    <label for="responsavel" class="form-label">Reponsavel do projeto</label>
+                    <input type="text" class="form-control card" id="responsavel" placeholder="Reponsavel do projeto"
+                        formControlName="responsavel">
+                    <div class="invalid-feedback">
+                        Informe o reponsavel do projeto projeto!!!
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <label for="custong " class="form-label">Custo do projeto</label>
+                    <input type="text" class="form-control card" id="custo" placeholder="Custo do projeto"
+                        formControlName="custo">
+                    <div class="invalid-feedback">
+                        Informe o custo do projeto!!!
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn bg-success text-light me-2" type="submit" (click)="Salvar()">Salvar</button>
+            <button class="btn btn-danger" type="submit" (click)="Cancelar()">Cancelar</button>
+          </div>
+    </form>
+</div>
+

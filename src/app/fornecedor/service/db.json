@@ -1,0 +1,28 @@
+{
+  "fornecedor": [
+    {
+      "id": 1,
+      "nome": "Pedro",
+      "cnpj": "8242482",
+      "ie": "24354",
+      "endereco": "Virgilio de rezende",
+      "email": "phsamegima@gmail.com"
+    },
+    {
+      "id": 2,
+      "nome": "qtx",
+      "cnpj": "1123",
+      "ie": "2234",
+      "endereco": "rua dos bobos",
+      "email": "bobo@.com.br"
+    },
+    {
+      "id": 3,
+      "nome": "RRT",
+      "cnpj": "2334",
+      "ie": "35",
+      "endereco": "www",
+      "email": "www"
+    }
+  ]
+}

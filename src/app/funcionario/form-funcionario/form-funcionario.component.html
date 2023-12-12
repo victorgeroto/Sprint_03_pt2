@@ -1,0 +1,47 @@
+<div class="card p-3 mt-3">
+    <form class="row g-3 needs-validation" novalidate [formGroup]="form">
+        <div class="col-sm-12">
+            <label for="nome" class="form-label">Nome do funcionarios</label>
+            <input type="text" class="form-control card" id="nome" placeholder="Nome do funcionario " formControlName="nome">
+            <div class="invalid-feedback">
+                Informe o nome dos funcionarios!!!
+            </div>
+        </div>
+        <div class="col-sm-6">        
+            <label for="Cargo" class="form-label">Cargo dos funcionarios</label>
+            <input type="text" class="form-control card" id="cargo" placeholder="cargo" formControlName="cargo">
+            <div class="invalid-feedback">
+                Informe o cargo dos funcionarios!!!
+            </div>
+            <div class="col-sm-6">
+                <label for="Salario" class="form-label">Salario dos funcionarios</label>
+                <input type="text" class="form-control card" id="salario" placeholder="Salario dos funcionarios" formControlName="salario">
+                <div class="invalid-feedback">
+                    Informe o salario dos funcionarios!!!
+                </div>
+                <div class="col-sm-12">
+                    <label for="areaAtuacao" class="form-label">Area de atuação</label>
+                    <input type="text" class="form-control card" id="areaAtuacao" placeholder="Area de atuação"
+                        formControlName="area_atuacao">
+                    <div class="invalid-feedback">
+                        Informe a area de atuação dos funcionarios!!!
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <label for="localTrabalho" class="form-label">Local de trabalho</label>
+                    <input type="text" class="form-control card" id="localTrabalho" placeholder="Local de trabalho"
+                        formControllocalName="local_trabalho">
+                    <div class="invalid-feedback">
+                        Informe o local de trabalho dos funcionarios!!!
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn bg-success text-light me-2" type="submit" (click)="Salvar()">Salvar</button>
+            <button class="btn btn-danger" type="submit" (click)="Cancelar()">Cancelar</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,6 @@
+.card{
+    background: rgba(255, 255, 255, 0.1); /* No exemplo, é um branco com 50% de transparência */
+
+    /* Adicione o filtro de desfoque */
+    backdrop-filter: blur(8px); 
+}

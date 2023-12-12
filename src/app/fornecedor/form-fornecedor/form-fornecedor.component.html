@@ -1,0 +1,47 @@
+<div class="card p-3 mt-3">
+    <form class="row g-3 needs-validation" novalidate [formGroup]="form">
+        <div class="col-sm-12">
+            <label for="nome" class="form-label">Nome do fornecedor</label>
+            <input type="text" class="form-control card" id="nome" placeholder="Nome do fornecedor " formControlName="nome">
+            <div class="invalid-feedback">
+                Informe o nome dos fornecedores!!!
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <label for="nome" class="form-label">Cnpj dos fornecedores</label>
+            <input type="text" class="form-control card" id="cnpj" placeholder="cnpj" formControlName="cnpj">
+            <div class="invalid-feedback">
+                Informe o cnpj dos fornecedores!!!
+            </div>
+            <div class="col-sm-6">
+                <label for="nome" class="form-label">Ie dos clientes</label>
+                <input type="text" class="form-control card" id="ie" placeholder="ie dos clientes" formControlName="ie">
+                <div class="invalid-feedback">
+                    Informe o ie dos fornecedores!!!
+                </div>
+                <div class="col-sm-12">
+                    <label for="nome" class="form-label">Enderços dos clientes</label>
+                    <input type="text" class="form-control card" id="endereco" placeholder="Enderços dos clientes"
+                        formControlName="endereco">
+                    <div class="invalid-feedback">
+                        Informe os endereços dos fornecedores!!!
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <label for="nome" class="form-label">Email dos clientes</label>
+                    <input type="text" class="form-control card" id="email" placeholder="Email dos clientes"
+                        formControlName="email">
+                    <div class="invalid-feedback">
+                        Informe o email dos fornecedores!!!
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn bg-success text-light me-2" type="submit" (click)="Salvar()">Salvar</button>
+            <button class="btn btn-danger" type="submit" (click)="Cancelar()">Cancelar</button>
+        </div>
+    </form>
+</div>

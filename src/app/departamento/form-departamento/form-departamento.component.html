@@ -1,0 +1,38 @@
+<div class="card p-3 card-body">
+    <form class="row g-3 needs-validation" novalidate [formGroup]="form">
+        <div class="col-sm-12 ">
+            <label for="nome" class="form-label text-light">Nome do Departamento</label>
+            <input type="text" class="form-control card " id="nome" placeholder="Nome do Departamento" formControlName="nome">
+            <div class="invalid-feedback">
+                Informe o nome do departamento!!!
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <label for="nome" class="form-label">Localidade do departamento</label>
+            <input type="text" class="form-control card" id="Localidade" placeholder="Localidade" formControlName="localidade">
+            <div class="invalid-feedback">
+                Informe a localidade do departamento!!!
+            </div>
+            <div class="col-sm-6">
+                <label for="nome" class="form-label"> Descricao de atividades</label>
+                <input type="text" class="form-control card" id="Descrição de Atividades" placeholder="Descrição de Atividades" formControlName="descricaoatividades">
+                <div class="invalid-feedback">
+                    Informe a descricao de atividades do departamento!!!
+                </div>
+                <div class="col-sm-12">
+                    <label for="nome" class="form-label">Email dos departamentos</label>
+                    <input type="text" class="form-control card" id="Email" placeholder="Email dos Departamentos"
+                        formControlName="email">
+                    <div class="invalid-feedback">
+                        Informe o email dos departamentos!!!
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn bg-success text-light me-2" type="submit" (click)="Salvar()">Salvar</button>
+            <button class="btn btn-danger" type="submit" (click)="Cancelar()">Cancelar</button>
+        </div>
+    </form>
+</div>
